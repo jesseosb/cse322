@@ -17,5 +17,6 @@ foreach($skills as $value){
     responseTxt += "<tr><td>$value</td><td>$rank</td><td>$level</td><td>$xp</td></tr>";
     $i++;
 }
+
 echo responseTxt;
 ?>
