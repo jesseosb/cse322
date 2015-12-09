@@ -4,7 +4,7 @@ $hs = file_get_contents("http://services.runescape.com/m=hiscore_oldschool/index
 $hs = explode("\n",$hs);
 $skills = array("Overall","Attack","Defence","Strength","Constitution","Ranged","Prayer","Magic","Cooking","Woodcutting","Fletching","Fishing","Firemaking","Crafting","Smithing","Mining","Herblore","Agility","Thieving","Slayer","Farming","Runecrafting","Hunter","Construction");
 $i = 0;
-$responseTxt
+$responseTxt = "";
 
 foreach($skills as $value){
     $hs[$i] = explode(",",$hs[$i]);
