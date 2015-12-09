@@ -13,12 +13,7 @@ foreach($skills as $value){
     $level = $hs[$i][1];
     $stats[$value]["xp"] = $hs[$i][2];
     $xp = $hs[$i][2];
-    echo "<tr>
-        <td>$value</td>
-        <td>$rank</td>
-        <td>$level</td>
-        <td>$xp</td>
-        </tr>";
+    echo "<tr><td>$value</td><td>$rank</td><td>$level</td><td>$xp</td></tr>";
     $i++;
 }
 
