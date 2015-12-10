@@ -9,7 +9,7 @@ body {
 }
 
 .row .col-sm-4 {
-	min-width: 80vw;
+	margin: 0 auto;
 }
 
 .theme-dropdown .dropdown-menu {
