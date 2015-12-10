@@ -4,6 +4,10 @@ body {
   background-color: #86592d;
 }
 
+.jumbotron {
+	text-align: center;
+}
+
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
