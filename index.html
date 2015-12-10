@@ -42,23 +42,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Jesse Oesterblad</a>
+          <a class="navbar-brand">Jesse Oesterblad</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Calculator</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#diff">Differential</a></li>
+            <li><a href="examples.html">Examples</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Axles <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">Dana 60</a></li>
+                <li><a href="#">Corporate 14 Bolt</a></li>
+                <li><a href="#">Ford 9 Inch</a></li>
               </ul>
             </li>
           </ul>
@@ -70,147 +66,9 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Theme example</h1>
-        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+        <h1>Offroading Axles</h1><br>
+        <p>Offroading in a vehicle significantly increases your chances of broken parts. The best way to avoid breaking said parts, is to install upgraded versions built to higher specs. This website showcases a few axles that may be used as upgrades in many vehichles.</p>
       </div>
-
-	  <div id="button">
-		<label>Your name: 
-			<input type="text" id="ajaxTextbox" />
-		</label>
-		<button type="button" class="btn btn-xs btn-primary" id ="ajaxButton">Lookup Character</button>
-		<!--<span id="ajaxButton" style="cursor: pointer; text-decoration: underline">-->
-		<!--Make a request-->
-		<!--</span>-->
-		<script type="text/javascript">
-		(function() {
-			var httpRequest;
-			document.getElementById("ajaxButton").onclick = function() { 
-			var player = document.getElementById("ajaxTextbox").value;
-			makeRequest('osrshstable.php',player); 
-			};
-
-			function makeRequest(url, player) {
-				httpRequest = new XMLHttpRequest();
-
-				if (!httpRequest) {
-					alert('Giving up :( Cannot create an XMLHTTP instance');
-					return false;
-				}
-			httpRequest.onreadystatechange = alertContents;
-			// httpRequest.open('POST', url, true);
-			httpRequest.open("GET", url + "?player=" + player, true);
-			// httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-			httpRequest.send();
-			}
-
-			function alertContents() {
-				if (httpRequest.readyState === XMLHttpRequest.DONE) {
-					if (httpRequest.status === 200) {
-					  var response = httpRequest.responseText;
-					  document.getElementById('result').innerHTML = response;
-						// var response = JSON.parse(httpRequest.responseText);
-						// for (var i = 0; i < 24; i++) {
-						//   document.getElementById('hs' + i '0').innerHTML = response["Overall"]["rank"];
-      //       }
-						// document.getElementById('hs00').innerHTML = response["Overall"]["rank"];
-						// document.getElementById('hs01').innerHTML = response["Overall"]["level"];
-						// document.getElementById('hs02').innerHTML = response["Overall"]["xp"];
-						// document.getElementById('hs10').innerHTML = response["Attack"]["rank"];
-						// document.getElementById('hs11').innerHTML = response["Attack"]["level"];
-						// document.getElementById('hs12').innerHTML = response["Attack"]["xp"];
-						// document.getElementById('hs20').innerHTML = response["Defence"]["rank"];
-						// document.getElementById('hs21').innerHTML = response["Defence"]["level"];
-						// document.getElementById('hs22').innerHTML = response["Defence"]["xp"];
-					} else {
-						alert('There was a problem with the request.');
-					}
-				}
-			}
-		})();
-		</script>
-	  </div>
-
-      <!--<div class="page-header">-->
-      <!--  <h1>Buttons</h1>-->
-      <!--</div>-->
-      <!--<p>-->
-      <!--  <button type="button" class="btn btn-lg btn-default">Default</button>-->
-      <!--  <button type="button" class="btn btn-lg btn-primary">Primary</button>-->
-      <!--  <button type="button" class="btn btn-lg btn-success">Success</button>-->
-      <!--  <button type="button" class="btn btn-lg btn-info">Info</button>-->
-      <!--  <button type="button" class="btn btn-lg btn-warning">Warning</button>-->
-      <!--  <button type="button" class="btn btn-lg btn-danger">Danger</button>-->
-      <!--  <button type="button" class="btn btn-lg btn-link">Link</button>-->
-      <!--</p>-->
-      <!--<p>-->
-      <!--  <button type="button" class="btn btn-default">Default</button>-->
-      <!--  <button type="button" class="btn btn-primary">Primary</button>-->
-      <!--  <button type="button" class="btn btn-success">Success</button>-->
-      <!--  <button type="button" class="btn btn-info">Info</button>-->
-      <!--  <button type="button" class="btn btn-warning">Warning</button>-->
-      <!--  <button type="button" class="btn btn-danger">Danger</button>-->
-      <!--  <button type="button" class="btn btn-link">Link</button>-->
-      <!--</p>-->
-      <!--<p>-->
-      <!--  <button type="button" class="btn btn-sm btn-default">Default</button>-->
-      <!--  <button type="button" class="btn btn-sm btn-primary">Primary</button>-->
-      <!--  <button type="button" class="btn btn-sm btn-success">Success</button>-->
-      <!--  <button type="button" class="btn btn-sm btn-info">Info</button>-->
-      <!--  <button type="button" class="btn btn-sm btn-warning">Warning</button>-->
-      <!--  <button type="button" class="btn btn-sm btn-danger">Danger</button>-->
-      <!--  <button type="button" class="btn btn-sm btn-link">Link</button>-->
-      <!--</p>-->
-      <!--<p>-->
-      <!--  <button type="button" class="btn btn-xs btn-default">Default</button>-->
-      <!--  <button type="button" class="btn btn-xs btn-primary">Primary</button>-->
-      <!--  <button type="button" class="btn btn-xs btn-success">Success</button>-->
-      <!--  <button type="button" class="btn btn-xs btn-info">Info</button>-->
-      <!--  <button type="button" class="btn btn-xs btn-warning">Warning</button>-->
-      <!--  <button type="button" class="btn btn-xs btn-danger">Danger</button>-->
-      <!--  <button type="button" class="btn btn-xs btn-link">Link</button>-->
-      <!--</p>-->
-
-
-      <div class="page-header">
-        <h1>Tables</h1>
-      </div>
-      <div></div>
-      <div class="row">
-        <div class="col-md-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Skill</th>
-                <th>Rank</th>
-                <th>Level</th>
-                <th>XP</th>
-              </tr>
-            </thead>
-            <tbody id='result'>
-      <!--        <tr>-->
-      <!--          <td>Overall</td>-->
-      <!--          <td><span id='hs00'></span></td>-->
-      <!--          <td><span id='hs01'></span></td>-->
-      <!--          <td><span id='hs02'></span></td>-->
-      <!--        </tr>-->
-      <!--        <tr>-->
-      <!--          <td>Attack</td>-->
-      <!--          <td><span id='hs10'></span></td>-->
-      <!--          <td><span id='hs11'></span></td>-->
-      <!--          <td><span id='hs12'></span></td>-->
-      <!--        </tr>-->
-      <!--        <tr>-->
-      <!--          <td>Defence</td>-->
-      <!--          <td><span id='hs20'></span></td>-->
-      <!--          <td><span id='hs21'></span></td>-->
-      <!--          <td><span id='hs22'></span></td>-->
-      <!--        </tr>-->
-            </tbody>
-          </table>
-        </div>
-      </div>
-
 
       <div class="page-header">
         <h1>Thumbnails</h1>
