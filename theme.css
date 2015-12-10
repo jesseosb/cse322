@@ -9,6 +9,7 @@ body {
 }
 
 .row .col-sm-4 {
+	width: auto;
 	margin: 0 auto;
 }
 
