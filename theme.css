@@ -8,7 +8,7 @@ body {
 	text-align: center;
 }
 
-.row {
+.row .col-sm-4 {
 	min-width: 80vw;
 }
 
