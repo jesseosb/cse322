@@ -9,7 +9,7 @@ body {
 }
 
 .panel-body {
-	min-width: 80%;
+	min-width: 80vw;
 }
 
 .theme-dropdown .dropdown-menu {
