@@ -1,5 +1,5 @@
-corona,Mexican,pale lager
-coors,Colorado,light beer
-Budweiser,Missouri,barley malt
+Corona,Mexico,Pale Lager
+Coors Light,Colorado,light Pale Lager
+Budweiser,Missouri,Barley Malt
 Oskar,Colorado,IPA
-Mickeys,American,Malt liquor
+Mickeys,American,Malt Liquor
