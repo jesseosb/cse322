@@ -131,7 +131,7 @@
             cell1.innerHTML = '<span id="nameID' + thisRow + '" cols=15 rows=1>' + name + '</span>';
             cell2.innerHTML = '<span id="birthplaceID' + thisRow + '" cols=15 rows=1>' + birthplace + "</span>";
             cell3.innerHTML = '<span id="typeID' + thisRow + '" cols=15 rows=1>' + type + "</span>";
-            cell4.innerHTML = '<div class="button"><button onclick="myEditRow(\'' + thisRow + '\',\'' + escape(name) + '\',\'' + escape(birthplace) + '\',\'' + escape(type) + '\')">Edit</button> <button class="button" onclick="myRemoveRow(\'' + thisRow + '\')">Delete</button></div>';
+            cell4.innerHTML = '<div class="button"><button onclick="myEditRow(\'' + thisRow + '\',\'' + escape(name) + '\',\'' + escape(birthplace) + '\',\'' + escape(type) + '\')">Edit</button> <button onclick="myRemoveRow(\'' + thisRow + '\',\'' + escape(name) + '\',\'' + escape(birthplace) + '\',\'' + escape(type) + '\')">Delete</button></div>';
         }
 
         // function myAddTags() {
