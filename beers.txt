@@ -1,8 +1,3 @@
-Corona,Mexico,Pale Lager
-Coors Light,Colorado,light Pale Lager
-Budweiser,Missouri,Barley Malt
-Oskar,Colorado,IPA
-Mickeys,American,Malt Liquor
 Eviltwin Brewing - Citra Sunshine Slacker;Stratford, CT;Session IPA
 Eviltwin Brewing - Soft DK;Stratford, CT;Imperial Stout
 Eviltwin Brewing - Falco;Stratford, CT;American IPA
